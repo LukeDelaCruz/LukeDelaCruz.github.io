@@ -57,7 +57,8 @@
 				<!-- RS Energy Group -->
 				<div class="col-4 col-6-medium col-12-small">
 					<section class="box style1">
-						<a href="https://www.rseg.com/" class="image featured"><img src="/images/RSEG_Logo.svg" alt="" /></a>
+						<span><a href="https://www.rseg.com/" class="image featured"><img src="/images/RSEG_Logo.svg"
+									alt="" /></span>
 						<h3><a href="https://www.rseg.com/">RS Energy Group</a></h3>
 						<p>Big Data Analysis Software Firm.</p>
 					</section>
@@ -123,7 +124,7 @@
 		</div>
 	</article>
 
-	<!-- Contact -->
+	<!-- Contact Form -->
 	<article id="contact" class="wrapper style4">
 		<div class="container medium">
 			<header>
@@ -156,8 +157,8 @@
 							</div>
 						</div>
 					</form>
-					<script> 
-						var contactform =  document.getElementById('contactForm');
+					<script>
+						var contactform = document.getElementById('contactForm');
 						// Fragmenting out my email to make it harder for spambot parsing
 						contactform.setAttribute('action', '//formspree.io/' + 'lukepatrick.dc' + '@' + 'gmail' + '.' + 'com');
 					</script>
@@ -166,8 +167,10 @@
 					<hr />
 					<h3>Find me on ...</h3>
 					<ul class="social">
-						<li><a href="https://www.linkedin.com/in/lukepatrickdc/" target="_blank" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-						<li><a href="https://www.github.com/lukedelacruz" target="_blank" class="icon brands fa-github"><span class="label">Github</span></a></li>
+						<li><a href="https://www.linkedin.com/in/lukepatrickdc/" target="_blank"
+								class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+						<li><a href="https://www.github.com/lukedelacruz" target="_blank"
+								class="icon brands fa-github"><span class="label">Github</span></a></li>
 					</ul>
 					<hr />
 				</div>
@@ -187,6 +190,18 @@
 	<script src="assets/js/breakpoints.min.js"></script>
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
+	<script src="assets/js/jquery.are-you-sure.js"></script>
+	<script>
+		$(function () {
+			$('#contactForm').areYouSure(
+				{
+					message: 'It looks like you have been editing something. '
+						+ 'If you leave before saving, your changes will be lost.'
+				}
+			);
+		});
+
+	</script>
 
 </body>
 

@@ -19,7 +19,7 @@
 			<li><a href="#portfolio">Portfolio</a></li>
 			<li><a href="#contact">Contact Form</a></li>
 			<li style="text-align:right"><a id="resumeAnchor"
-					href="https://docs.google.com/document/d/1Z5Kx-F6qzIHJPWCOFim3wT2vFKZjYuDD9izEvr-_Wus/edit?usp=sharing"
+					href="https://docs.google.com/document/d/1Z5Kx-F6qzIHJPWCOFim3wT2vFKZjYuDD9izEvr-_Wus/preview"
 					target="_blank">Resume</a></li>
 		</ul>
 	</nav>
@@ -29,15 +29,16 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-4 col-5-large col-12-medium">
-					<span class="image fit"><img src="images/pic00.jpg" alt="" /></span>
+					<span class="image fit"><img src="/images/Profile.jpg" alt="" /></span>
 				</div>
 				<div class="col-8 col-7-large col-12-medium">
 					<header>
-						<h1>Hi, my name is <strong>Luke Dela Cruz</strong>.</h1>
+						<h1>Hi, my name is</h1>
+						<h1><strong>Luke Dela Cruz</strong>.</h1>
 						<h1>Thanks for stopping by.</h1>
 					</header>
-					<p>For your convenience, I have organized my experiences here.</p>
-					<a href="#work" class="button large scrolly">Learn about my work experience</a>
+					<p>I have conveniently organized my <strong>engineering</strong> experience here.</p>
+					<a href="#work" class="button large scrolly">Let's see what you got</a>
 				</div>
 			</div>
 		</div>
@@ -49,38 +50,38 @@
 			<header>
 				<h2>Companies/clubs I have contributed to.</h2>
 				<p>Check out the finer details on <a id="resumeAnchor"
-						href="https://docs.google.com/document/d/1Z5Kx-F6qzIHJPWCOFim3wT2vFKZjYuDD9izEvr-_Wus/edit?usp=sharing"
-						target="_blank">my resume</a></p>
+						href="https://docs.google.com/document/d/1Z5Kx-F6qzIHJPWCOFim3wT2vFKZjYuDD9izEvr-_Wus/preview"
+						target="_blank">my resume</a>.</p>
 			</header>
 			<div class="row aln-center">
+				<!-- RS Energy Group -->
 				<div class="col-4 col-6-medium col-12-small">
 					<section class="box style1">
-						<span class="icon featured fa-comments"></span>
-						<h3>Consequat lorem</h3>
-						<p>Ornare nulla proin odio consequat sapien vestibulum ipsum primis sed amet consequat lorem
-							dolore.</p>
+						<a href="https://www.rseg.com/" class="image featured"><img src="/images/RSEG_Logo.svg" alt="" /></a>
+						<h3><a href="https://www.rseg.com/">RS Energy Group</a></h3>
+						<p>Big Data Analysis Software Firm.</p>
 					</section>
 				</div>
+				<!-- Discover Coding -->
 				<div class="col-4 col-6-medium col-12-small">
 					<section class="box style1">
 						<span class="icon solid featured fa-camera-retro"></span>
-						<h3>Lorem dolor tempus</h3>
-						<p>Ornare nulla proin odio consequat sapien vestibulum ipsum primis sed amet consequat lorem
-							dolore.</p>
+						<h3>Discover Coding</h3>
+						<p>Coding School for the Little Ones.</p>
 					</section>
 				</div>
+				<!-- UAARG -->
 				<div class="col-4 col-6-medium col-12-small">
 					<section class="box style1">
 						<span class="icon featured fa-thumbs-up"></span>
-						<h3>Feugiat posuere</h3>
-						<p>Ornare nulla proin odio consequat sapien vestibulum ipsum primis sed amet consequat lorem
-							dolore.</p>
+						<h3>UAARG</h3>
+						<p>University of Alberta Aerial Robotics Group. We build planes.</p>
 					</section>
 				</div>
 			</div>
 			<footer>
 				<p>?</p>
-				<a href="#portfolio" class="button large scrolly">See some of my recent work</a>
+				<a href="#portfolio" class="button large scrolly">Ok, that's all you got?</a>
 			</footer>
 		</div>
 	</article>
@@ -95,7 +96,7 @@
 			<div class="row">
 				<div class="col-4 col-6-medium col-12-small">
 					<article class="box style2">
-						<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
+						<a href="#" class="image featured"><img src="images/RSEG_logo.jpg" alt="" /></a>
 						<h3><a href="#">Magna feugiat</a></h3>
 						<p>Ornare nulla proin odio consequat.</p>
 					</article>
@@ -117,7 +118,7 @@
 			</div>
 			<footer>
 				<p>Lorem ipsum dolor sit sapien vestibulum ipsum primis?</p>
-				<a href="#contact" class="button large scrolly">Get in touch with me</a>
+				<a href="#contact" class="button large scrolly">Cool, let's talk</a>
 			</footer>
 		</div>
 	</article>
@@ -126,24 +127,24 @@
 	<article id="contact" class="wrapper style4">
 		<div class="container medium">
 			<header>
-				<h2>Have me make stuff for you.</h2>
-				<p>Yes, this contact form actually works. Expect a response within 0-2 days.</p>
+				<h2>Have me make stuff for your team</h2>
+				<p>You hate spam so do I, this goes to my personal inbox. Expect a response within 0-2 days.</p>
 			</header>
 			<div class="row">
 				<div class="col-12">
 					<form id="contactForm" method="post">
 						<div class="row">
 							<div class="col-6 col-12-small">
-								<input type="text" name="name" id="name" placeholder="Name" />
+								<input type="text" name="name" id="name" required placeholder="Name/Company" />
 							</div>
 							<div class="col-6 col-12-small">
-								<input type="text" name="_replyto" id="email" placeholder="Email" />
+								<input type="email" name="_replyto" id="email" required placeholder="Email" />
 							</div>
 							<div class="col-12">
 								<input type="text" name="_subject" id="subject" placeholder="Subject" />
 							</div>
 							<div class="col-12">
-								<textarea name="message" id="message" placeholder="Message"></textarea>
+								<textarea name="message" id="message" required placeholder="Message"></textarea>
 								<!-- honeypot mechanism for spambots 
 								(formspree api ignores all emails with this field filled in) -->
 								<input type="text" name="_gotcha" style="display:none" />
@@ -165,15 +166,15 @@
 					<hr />
 					<h3>Find me on ...</h3>
 					<ul class="social">
-						<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-						<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+						<li><a href="https://www.linkedin.com/in/lukepatrickdc/" target="_blank" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+						<li><a href="https://www.github.com/lukedelacruz" target="_blank" class="icon brands fa-github"><span class="label">Github</span></a></li>
 					</ul>
 					<hr />
 				</div>
 			</div>
 			<footer>
 				<ul id="copyright">
-					<li>&copy; All rights earned but still potentially undeserved.</li>
+					<li>&copy; All rights (maybe not all of them) undeserved.</li>
 				</ul>
 			</footer>
 		</div>

@@ -19,8 +19,8 @@
 			<li><a href="#portfolio">Portfolio</a></li>
 			<li><a href="#contact">Contact Form</a></li>
 			<li style="text-align:right"><a id="resumeAnchor"
-					href="https://docs.google.com/document/d/1Z5Kx-F6qzIHJPWCOFim3wT2vFKZjYuDD9izEvr-_Wus/preview"
-					target="_blank">Resume</a></li>
+					href="https://docs.google.com/document/d/1Z5Kx-F6qzIHJPWCOFim3wT2vFKZjYuDD9izEvr-_Wus/preview">Resume</a>
+			</li>
 		</ul>
 	</nav>
 
@@ -48,41 +48,57 @@
 	<article id="work" class="wrapper style2">
 		<div class="container">
 			<header>
-				<h2>Companies/clubs I have contributed to.</h2>
-				<p>Check out the finer details on <a id="resumeAnchor"
-						href="https://docs.google.com/document/d/1Z5Kx-F6qzIHJPWCOFim3wT2vFKZjYuDD9izEvr-_Wus/preview"
-						target="_blank">my resume</a>.</p>
+				<h2>Companies/Club(s) I have contributed to.</h2>
+				<p>See the finer details on <a id="resumeAnchor"
+						href="https://docs.google.com/document/d/1Z5Kx-F6qzIHJPWCOFim3wT2vFKZjYuDD9izEvr-_Wus/preview">my
+						resume</a>.</p>
 			</header>
 			<div class="row aln-center">
 				<!-- RS Energy Group -->
 				<div class="col-4 col-6-medium col-12-small">
 					<section class="box style1">
-						<span><a href="https://www.rseg.com/" class="image featured"><img src="/images/RSEG_Logo.svg"
-									alt="" /></span>
+						<span>
+							<a href="https://www.rseg.com/" class="icon solid featured">
+								<img src="/images/RS.png" alt="" style="width: 31.53%; height: auto;" />
+							</a>
+						</span>
 						<h3><a href="https://www.rseg.com/">RS Energy Group</a></h3>
-						<p>Big Data Analysis Software Firm.</p>
+						<p><i><strong>Big Data Analysis / Software Firm.</strong></i>
+							<br> Was with <strong> backend engineering team.</strong>
+						</p>
 					</section>
 				</div>
 				<!-- Discover Coding -->
 				<div class="col-4 col-6-medium col-12-small">
 					<section class="box style1">
-						<span class="icon solid featured fa-camera-retro"></span>
-						<h3>Discover Coding</h3>
-						<p>Coding School for the Little Ones.</p>
+						<span>
+							<a href="https://www.discovercoding.ca/" class="icon solid featured">
+								<img src="/images/DiscoverCoding.png" alt="" style="width: 90%; height: auto;" />
+							</a>
+						</span>
+						<h3><a href="https://www.discovercoding.ca/">Discover Coding</a></h3>
+						<p><i><strong>Coding School for the Little Ones.</strong></i>
+							<br>My classes <strong>taught from ages 7-11.</strong>
+						</p>
 					</section>
 				</div>
 				<!-- UAARG -->
 				<div class="col-4 col-6-medium col-12-small">
 					<section class="box style1">
-						<span class="icon featured fa-thumbs-up"></span>
-						<h3>UAARG</h3>
-						<p>University of Alberta Aerial Robotics Group. We build planes.</p>
+						<span>
+							<a href="http://uaarg.com/" class="icon solid featured">
+								<img src="/images/UAARG.jpg" alt="" style="width: 28.8%; height: auto;" />
+							</a>
+						</span>
+						<h3><a href="http://uaarg.com/">UAARG</a></h3>
+						<p><i><strong>Uni. of Alberta Aerial Robotics Group.</i></strong>
+							<br> We fly. I am on <strong>autopilot.</strong>
+						</p>
 					</section>
 				</div>
 			</div>
 			<footer>
-				<p>?</p>
-				<a href="#portfolio" class="button large scrolly">Ok, that's all you got?</a>
+				<a href="#portfolio" class="button large scrolly">Nice, any personal projects?</a>
 			</footer>
 		</div>
 	</article>
@@ -157,20 +173,15 @@
 							</div>
 						</div>
 					</form>
-					<script>
-						var contactform = document.getElementById('contactForm');
-						// Fragmenting out my email to make it harder for spambot parsing
-						contactform.setAttribute('action', '//formspree.io/' + 'lukepatrick.dc' + '@' + 'gmail' + '.' + 'com');
-					</script>
 				</div>
 				<div class="col-12">
 					<hr />
 					<h3>Find me on ...</h3>
 					<ul class="social">
-						<li><a href="https://www.linkedin.com/in/lukepatrickdc/" target="_blank"
+						<li><a href="https://www.linkedin.com/in/lukepatrickdc/"
 								class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-						<li><a href="https://www.github.com/lukedelacruz" target="_blank"
-								class="icon brands fa-github"><span class="label">Github</span></a></li>
+						<li><a href="https://www.github.com/lukedelacruz" class="icon brands fa-github"><span
+									class="label">Github</span></a></li>
 					</ul>
 					<hr />
 				</div>
@@ -190,6 +201,12 @@
 	<script src="assets/js/breakpoints.min.js"></script>
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
+	<script>
+		// Default to using target="_blank" for all anchor elements
+		function externalLinks() { for (var c = document.getElementsByTagName("a"), a = 0; a < c.length; a++) { var b = c[a]; b.getAttribute("href") && b.hostname !== location.hostname && (b.target = "_blank") } }; externalLinks();
+	</script>
+
+	<!-- Form scripts -->
 	<script src="assets/js/jquery.are-you-sure.js"></script>
 	<script>
 		$(function () {
@@ -200,7 +217,11 @@
 				}
 			);
 		});
-
+	</script>
+	<script>
+		var contactform = document.getElementById('contactForm');
+		// Fragmenting out my email to make it harder for spambot parsing
+		contactform.setAttribute('action', '//formspree.io/' + 'lukepatrick.dc' + '@' + 'gmail' + '.' + 'com');
 	</script>
 
 </body>

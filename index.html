@@ -14,11 +14,10 @@
 	<!-- Nav -->
 	<nav id="nav">
 		<ul class="container">
-			<li><a href="#top">Top</a></li>
 			<li><a href="#work">Work</a></li>
 			<li><a href="#projects">Projects</a></li>
 			<li><a href="#contact">Contact Form</a></li>
-			<li style="text-align:right"><a id="resumeAnchor"
+			<li><a id="resumeAnchor"
 					href="https://docs.google.com/document/d/1Z5Kx-F6qzIHJPWCOFim3wT2vFKZjYuDD9izEvr-_Wus/preview">Résumé
 				</a>
 			</li>
@@ -48,7 +47,7 @@
 	<!-- Work -->
 	<article id="work" class="wrapper style2">
 		<div class="container">
-			<header>
+			<header style="margin-top: -5%;">
 				<h2>Companies and Club(s) I have contributed to.</h2>
 				<p>See the finer details on <a id="resumeAnchor"
 						href="https://docs.google.com/document/d/1Z5Kx-F6qzIHJPWCOFim3wT2vFKZjYuDD9izEvr-_Wus/preview">my
@@ -98,7 +97,7 @@
 					</section>
 				</div>
 			</div>
-			<footer>
+			<footer style="margin-bottom: -5%;">
 				<p style="margin: 0px 0 10px 0;">...eat, sleep, merge <i class="fas fa-code-branch"></i></i>, repeat...
 				</p>
 				<a href="#projects" class="button large scrolly">Nice, any personal projects?</a>
@@ -109,7 +108,7 @@
 	<!-- Projects -->
 	<article id="projects" class="wrapper style3">
 		<div class="container">
-			<header>
+			<header style="margin-top: -6%;">
 				<h2>Some not-so-recent builds.</h2>
 				<p><i>(Ethical)</i> Hacking is a blast <i class="fas fa-laptop-code"></i></p>
 			</header>
@@ -171,7 +170,7 @@
 					</article>
 				</div>
 			</div>
-			<footer>
+			<footer style="margin-bottom: -5%;">
 				<p style="margin: 0px 0 10px 0;">...more in the making</p>
 				<a href="#contact" class="button large scrolly">Cool, let's talk</a>
 			</footer>
@@ -181,7 +180,7 @@
 	<!-- Contact Form -->
 	<article id="contact" class="wrapper style4">
 		<div class="container medium">
-			<header>
+			<header style="margin-top: -5%;">
 				<h2>Have me make stuff for your team</h2>
 				<p>
 					You hate spam so do I, this goes directly to my inbox: contact@lukedc.tech
@@ -280,6 +279,49 @@
 			document.execCommand("copy");
 			document.body.removeChild(dummy);
 		}
+	</script>
+
+	<style>
+		.top-scroller {
+			position: fixed;
+			bottom: 7%;
+			right: 3.5%;
+			font-size: 1em;
+			display: none;
+			z-index: 2;
+			text-align: center;
+			cursor: pointer;
+			height: 40px;
+			width: 40px;
+			border-radius: 50%;
+			background: rgba(0, 0, 0, .35);
+			color: #fff;
+			line-height: 40px;
+
+		}
+
+		.top-scroller:hover {
+			background: rgba(0, 0, 0, .6);
+		}
+	</style>
+	<div class="top-scroller js-top-scroller svg-icons">
+		<i class="fas fa-arrow-up"></i>
+	</div>
+	<script>
+		$(window).scroll(function () {
+			// console.log('wwww');
+			if ($(this).scrollTop() > 400) {
+				$('.top-scroller').fadeIn();
+			} else {
+				$('.top-scroller').fadeOut();
+			}
+		});
+		//Click event to scroll to top
+		$('.top-scroller').click(function () {
+			$('html, body').animate({ scrollTop: 0 }, 1000);
+			return false;
+		});
+
 	</script>
 
 </body>

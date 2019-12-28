@@ -1974,7 +1974,7 @@ input, select, textarea {
 		}
 
 		.icon.featured {
-			color: #EA8A95;
+			color: #339af0;
 			display: block;
 			margin: 0 0 1.5em 0;
 			/* cursor: default; */
@@ -2444,4 +2444,30 @@ input, select, textarea {
 						margin-top: 0;
 					}
 
+	}
+	.btn {
+		position: relative;
+		display: inline-block;
+		padding: 4px 10px;
+		font-size: 13px;
+		font-weight: 700;
+		line-height: 20px;
+		color: #333;
+		white-space: nowrap;
+		vertical-align: middle;
+		cursor: pointer;
+		background-color: #eee;
+		background-image: linear-gradient(#fcfcfc,#eee);
+		border: 1px solid #d5d5d5;
+		border-radius: 3px;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+		-webkit-appearance: none;
+	}
+	.clippy {
+		margin-top: -3px;
+		position: relative;
+		top: 3px;
 	}

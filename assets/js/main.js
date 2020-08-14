@@ -28,6 +28,6 @@
 	// Scrolly.
 	$('#nav a, .scrolly').scrolly({
 		speed: 500,
-		offset: function () { return $nav.height(); }
+		offset: function () { return $nav.height() - 40; }
 	});
 })(jQuery);
